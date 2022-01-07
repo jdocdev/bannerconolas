@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: url(./img/img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;   
+    transition: all 0.4s ease 0s; 
+}
+
+.container .svg-path{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Inicio Opción 2
+
+.container .svg-path .top{
+    height: 150px; 
+    overflow: hidden;
+}
+
+.container .svg-path .top svg{
+    height: 100%; 
+    width: 100%;
+}
+
+.container .svg-path .top svg path{
+    stroke: none; 
+    fill: #08f;
+}
+
+.container .svg-path .bottom{
+    height: 150px; 
+    overflow: hidden;
+}
+
+.container .svg-path .bottom svg{
+    height: 100%; 
+    width: 100%;
+}
+
+.container .svg-path .bottom svg path{
+    stroke: none; 
+    fill: #08f;
+}
+
+Fin Opción 2*/
+
+@media screen and (max-width: 1200px){
+    .container{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        height: 200px;
+    }
+}
